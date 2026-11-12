@@ -228,3 +228,7 @@ The source image has approximately 24% empty space to the right of the visible s
 ### Card action hierarchy
 
 Each service card has one primary action: Book Now, using the original gold pill button. View Details is a secondary text link with transparent background, understated underline and arrow. This supersedes the earlier rule that both actions used filled buttons.
+
+### Card title spacing
+
+Service titles use natural content height with a 10px bottom margin. Do not reserve two lines for one-line titles; align bottom actions using the existing flex layout instead.
