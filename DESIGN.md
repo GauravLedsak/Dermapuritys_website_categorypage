@@ -252,3 +252,7 @@ The latest marketing revision supersedes earlier category/service-selector requi
 ### Hero CTA hierarchy
 
 The hero copy contains only the Explore treatments text link. Its redundant inline Book Now button is removed; the visible form’s submit button is the primary hero action. Retain the fixed mobile Book Now shortcut and catalogue/bottom booking actions.
+
+### Single closing CTA section
+
+Keep only the consultation banner before the FAQs. Remove the duplicate final booking section after the FAQs, so the FAQ section leads directly into the footer. Existing catalogue actions and the fixed mobile shortcut remain.

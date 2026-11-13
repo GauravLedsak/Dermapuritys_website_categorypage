@@ -30,7 +30,7 @@ The expanded marketing brief is implemented as:
 5. Why choose Dermapuritys.
 6. Actual care-team profiles and expertise.
 7. Booking CTA and clinic contact options.
-8. Six skin-treatment FAQs and a final booking CTA.
+8. Six skin-treatment FAQs.
 
 The earlier refinements remain: one primary Book Now button per card, secondary View Details link, natural title height with a 10px description gap, shared booking-form focus, mobile sticky booking, keyboard focus and Escape menu dismissal.
 
