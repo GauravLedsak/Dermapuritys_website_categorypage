@@ -32,7 +32,7 @@ The expanded marketing brief is implemented as:
 7. Booking CTA and clinic contact options.
 8. Six skin-treatment FAQs and a final booking CTA.
 
-The earlier refinements remain: one primary Book Now button per card, secondary View Details link, natural title height with a 10px description gap, automatic treatment preselection, mobile sticky booking, keyboard focus and Escape menu dismissal.
+The earlier refinements remain: one primary Book Now button per card, secondary View Details link, natural title height with a 10px description gap, shared booking-form focus, mobile sticky booking, keyboard focus and Escape menu dismissal.
 
 ## Production integration
 
@@ -44,7 +44,7 @@ This is a standalone implementation. When integrating with the original website,
 
 - `app/category/skin/page.jsx`: route and metadata.
 - `components/SkinCategory.jsx`: navigation, hero, catalogue and shared selection state.
-- `components/ConsultationForm.jsx`: single category-specific enquiry form.
+- `components/ConsultationForm.jsx`: single four-field contact form.
 - `components/SkinSections.jsx`: content, benefits, doctor profiles and FAQs.
 - `components/Icons.jsx`: shared arrow icon.
 - `services.json`: existing skin service names, links and images.
@@ -58,6 +58,8 @@ Checked against the public Dermapuritys homepage on 13 November 2026. The homepa
 
 ## Validation
 
-Next.js production build passed. Browser checks covered desktop, tablet and mobile widths; hero form placement; service preselection; invalid and valid preview submissions; filters/search/empty state; FAQ expansion; mobile keyboard focus/menu dismissal; and loaded doctor portraits. Final review marked the mobile heading spacing correction resolved.
+Next.js production build passed. Browser checks covered desktop, tablet and mobile widths; hero form placement; booking-form focus; invalid and valid preview submissions; filters/search/empty state; FAQ expansion; mobile keyboard focus/menu dismissal; and loaded doctor portraits. Final review marked the mobile heading spacing correction resolved.
 
 The desktop hero uses three columns with vertically centered copy and form. Tablet places the form below a text/portrait row, and mobile stacks the elements.
+
+The latest marketing revision limits contact inputs to Name, Email, Phone and Branch. Category and Treatment fields have been removed, including their obsolete selection state. Email is required and uses native validation. All booking CTAs focus the shared form. Privacy consent and the explicit disconnected-preview message remain.

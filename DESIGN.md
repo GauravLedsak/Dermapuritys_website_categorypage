@@ -244,3 +244,7 @@ Follow with a four-item trustbar, existing treatment cards, two-column consultat
 The user rejected the small bottom portrait in the expanded hero. The current `.hero-with-form` rules replace the previous floating portrait composition. Desktop uses three grid columns: copy, a600px-tall portrait region, and the enquiry form, with24px gaps and vertically centered copy/form. The photo extends to the hero bottom while its face starts close to the form top. Source negative space may extend behind adjacent columns; text and form keep higher stacking order. Tablet uses a text/portrait row and centered full-width form below. Mobile stacks copy, a330px portrait and the form. Original brand styles remain unchanged.
 
 On tablet only, fade the lower17% of the portrait into the shared beige background to avoid a hard torso edge above the form. Desktop retains the full portrait, grounded on the banner edge.
+
+### Four-field contact form
+
+The latest marketing revision supersedes earlier category/service-selector requirements. Render exactly four contact inputs in this order: Name, Email, Phone, Branch. Desktop uses a2x2 field grid; mobile uses a single column. Email uses native email validation. Retain the existing consent line and gold submit button; remove category badge and all Category/Treatment controls. Booking CTAs focus the Name input without maintaining obsolete treatment-selection state.

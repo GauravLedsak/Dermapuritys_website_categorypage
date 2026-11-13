@@ -7,7 +7,7 @@ const doctors = [
 ];
 const questions = [
   ['Which skin treatments can I explore at Dermapuritys?', 'This category includes facials, skin boosters, peels, microneedling and other skin services. Browse the treatment catalogue for individual service information.'],
-  ['Do I need to choose a treatment before booking?', 'No. Select “Help me choose a skin treatment” in the consultation form. You can discuss your skin concerns and options with the team.'],
+  ['Do I need to choose a treatment before booking?', 'No. Enter your name, email, phone and preferred branch in the consultation form. You can discuss your skin concerns and treatment options with the team.'],
   ['How is a skin treatment selected?', 'A consultation gives you the opportunity to discuss your concerns, goals and relevant history. Ask the clinician about suitability, alternatives and what to expect before deciding.'],
   ['How much will my treatment cost?', 'Pricing depends on the service and the treatment plan. Contact the clinic for current prices and an individual estimate; this page does not display treatment prices.'],
   ['Will I need more than one session?', 'The number of sessions varies by treatment and individual needs. Your clinician can explain the proposed schedule and review process during your consultation.'],
