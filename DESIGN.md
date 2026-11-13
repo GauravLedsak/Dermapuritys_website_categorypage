@@ -238,3 +238,9 @@ Service titles use natural content height with a 10px bottom margin. Do not rese
 The November 13 brief moves the single category form into the hero. The hero now uses a shared warm background with a left story/portrait and a right white rounded form panel. The earlier two-element hero silhouette rules remain historical; the `.hero-with-form` rules own this composition. Desktop hero grid: flexible story plus420px form,44px gap; tablet365px form,24px gap; mobile stacked story and single-column form. Ground the original portrait on the hero bottom.
 
 Follow with a four-item trustbar, existing treatment cards, two-column consultation content, editorial benefits, three realdoctor profiles, closingCTA and six native details/summary FAQs. Keep normal headingtracking, originalNohemi/goldpillcontrols, oneprimaryCTApercard and naturalheighttitle10pxgap. Newformheadingusesh2 with Nohemi to maintainheadinghierarchy. No offers or competitor claims were added.
+
+### Three-element hero balance
+
+The user rejected the small bottom portrait in the expanded hero. The current `.hero-with-form` rules replace the previous floating portrait composition. Desktop uses three grid columns: copy, a600px-tall portrait region, and the enquiry form, with24px gaps and vertically centered copy/form. The photo extends to the hero bottom while its face starts close to the form top. Source negative space may extend behind adjacent columns; text and form keep higher stacking order. Tablet uses a text/portrait row and centered full-width form below. Mobile stacks copy, a330px portrait and the form. Original brand styles remain unchanged.
+
+On tablet only, fade the lower17% of the portrait into the shared beige background to avoid a hard torso edge above the form. Desktop retains the full portrait, grounded on the banner edge.

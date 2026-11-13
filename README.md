@@ -23,7 +23,7 @@ This project uses Next.js static export. Deploy `out/` to a static host. Both `/
 
 The expanded marketing brief is implemented as:
 
-1. Continuous branded hero with a skin-only consultation form.
+1. Continuous branded hero with balanced text, a large portrait and a skin-only consultation form.
 2. Immediate trust bar.
 3. Searchable/filterable catalogue of all 15 skin services.
 4. Category content and consultation guidance.
@@ -59,3 +59,5 @@ Checked against the public Dermapuritys homepage on 13 November 2026. The homepa
 ## Validation
 
 Next.js production build passed. Browser checks covered desktop, tablet and mobile widths; hero form placement; service preselection; invalid and valid preview submissions; filters/search/empty state; FAQ expansion; mobile keyboard focus/menu dismissal; and loaded doctor portraits. Final review marked the mobile heading spacing correction resolved.
+
+The desktop hero uses three columns with vertically centered copy and form. Tablet places the form below a text/portrait row, and mobile stacks the elements.
