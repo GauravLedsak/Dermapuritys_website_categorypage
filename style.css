@@ -142,3 +142,21 @@ h1 em,h2 em{letter-spacing:.015em}
 }
 @media(min-width:761px) and (max-width:1100px){.hero-with-form .hero-image img{left:calc(50% - 40px)}}
 @media(min-width:761px) and (max-width:1100px){.hero-with-form .hero-image img{mask-image:linear-gradient(to bottom,#000 0%,#000 83%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 83%,transparent 100%)}}
+
+/* Phone composition and context-aware booking shortcut. */
+.mobile-book[hidden]{display:none}
+@media(max-width:760px){
+ .hero-with-form .hero-story{display:flex;flex-direction:column;overflow:visible}
+ .hero-with-form .hero-copy{padding:28px 0 16px}
+ .hero-with-form .hero-copy>p{margin:18px 0 16px}
+ .hero-with-form .hero-caption{margin-top:16px;font-size:11px}
+ .hero-with-form .hero-image{position:relative;inset:auto;height:clamp(300px,85vw,360px);min-height:0;overflow:hidden}
+ .hero-with-form .hero-image img{height:100%;top:0;bottom:auto;mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%)}
+ .hero-with-form .hero-form{margin-top:16px}
+ .hero-form form{padding:24px 20px}
+ .hero-form .form-subtitle{line-height:1.6;margin:8px 0 20px}
+ .mobile-book{padding-left:22px;padding-right:22px}
+ .mobile-book>span{flex:1;min-width:0;line-height:1.5}
+ .mobile-book .btn{flex-shrink:0;white-space:nowrap;min-width:112px;min-height:44px}
+ .footer-bottom{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+}

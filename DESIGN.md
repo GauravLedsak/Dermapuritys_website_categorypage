@@ -256,3 +256,11 @@ The hero copy contains only the Explore treatments text link. Its redundant inli
 ### Single closing CTA section
 
 Keep only the consultation banner before the FAQs. Remove the duplicate final booking section after the FAQs, so the FAQ section leads directly into the footer. Existing catalogue actions and the fixed mobile shortcut remain.
+
+### Phone hero and contextual shortcut
+
+At <=760px, render copy and portrait in normal vertical flow with 28px top padding, tighter 18px/16px body margins and a 16px caption gap. Portrait height scales from 300px to 360px and fades through its lower 12% into the shared beige; keep 16px before the form. Preserve 22px outer gutters and a single-column, 16px-input form.
+
+The fixed mobile Book Now shortcut remains a 44px minimum, non-wrapping button. Hide the shortcut while the shared form intersects the usable viewport or contains focus; show it again when browsing away. Book Now focuses Name and brings the form below the sticky navigation. Enable viewport-fit=cover and reserve safe-area space in the shortcut and footer.
+
+Verified with browser viewport sizes 320, 375, 390, 430, 760, 844 and 1255px; no horizontal document overflow. Form focus and shortcut hide/restore verified. Physical iOS/Android keyboard and safe-area behavior remain untested.
