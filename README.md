@@ -1,10 +1,8 @@
-# Dermapuritys category page redesign
+# Dermapuritys skin category redesign
 
-A responsive Next.js App Router implementation of the Dermapuritys skin category page. It retains the original logo, Nohemi font, gold branding and website photography.
+A responsive Next.js App Router implementation retaining the original Dermapuritys logo, Nohemi font, gold pill buttons and website photography.
 
 ## Run locally
-
-Requires Node.js 20.9 or later.
 
 ```sh
 npm ci
@@ -13,39 +11,51 @@ npm run dev
 
 Open http://localhost:3000/category/skin/.
 
-## Build and deploy
+## Build
 
 ```sh
 npm run build
 ```
 
-This project uses Next.js static export. Deploy the generated `out/` directory to a static host. Both `/` and `/category/skin/` render the category page. `next start` does not serve a static export.
+This project uses Next.js static export. Deploy `out/` to a static host. Both `/` and `/category/skin/` render the page. Use a static server to preview `out/`; `next start` is not used for static export.
 
-## Included
+## Latest layout
 
-- Continuous hero image spread with portrait alignment based on its visible silhouette.
-- Original-brand gold pill buttons, rounded search and filters, and bordered service cards.
-- Search and filters for all 15 existing skin treatments.
-- One primary booking button per card, with a secondary service details link.
-- Skin-only consultation form with treatment preselection and local field validation.
-- Responsive layouts, keyboard focus, Escape menu dismissal and reduced-motion support.
+The expanded marketing brief is implemented as:
+
+1. Continuous branded hero with a skin-only consultation form.
+2. Immediate trust bar.
+3. Searchable/filterable catalogue of all 15 skin services.
+4. Category content and consultation guidance.
+5. Why choose Dermapuritys.
+6. Actual care-team profiles and expertise.
+7. Booking CTA and clinic contact options.
+8. Six skin-treatment FAQs and a final booking CTA.
+
+The earlier refinements remain: one primary Book Now button per card, secondary View Details link, natural title height with a 10px description gap, automatic treatment preselection, mobile sticky booking, keyboard focus and Escape menu dismissal.
 
 ## Production integration
 
-The consultation form is a design preview. It does not transmit or save enquiries. Connect the submit handler to the clinic’s approved booking/CRM endpoint before using it for live enquiries, and show confirmation only after the server confirms receipt.
+The form validates locally and is explicitly a design preview. It does not save or transmit enquiries. Connect its submit handler to the clinic's approved booking/CRM endpoint before live enquiry collection, and confirm receipt only after a successful server response.
 
-This is a standalone implementation, not a patch against the existing website repository. When integrating, retain the existing website’s Next.js version/configuration, reuse its shared header/footer, and merge the stylesheet into its styling system. The stylesheet contains global rules. The root preview route is optional.
+This is a standalone implementation. When integrating with the original website, retain its Next.js version and configuration, reuse its shared header/footer, and merge the stylesheet into its styling system. The stylesheet contains global rules. The root preview route is optional.
 
 ## Structure
 
-- `app/category/skin/page.jsx`: category route and metadata.
-- `components/SkinCategory.jsx`: catalogue, filters and enquiry interactions.
-- `services.json`: skin service names, links and images.
+- `app/category/skin/page.jsx`: route and metadata.
+- `components/SkinCategory.jsx`: navigation, hero, catalogue and shared selection state.
+- `components/ConsultationForm.jsx`: single category-specific enquiry form.
+- `components/SkinSections.jsx`: content, benefits, doctor profiles and FAQs.
+- `components/Icons.jsx`: shared arrow icon.
+- `services.json`: existing skin service names, links and images.
 - `style.css`: responsive styling.
-- `public/assets/`: original website brand assets.
+- `public/assets/`: original brand and doctor images.
+- `CONTENT_SOURCES.md`: content provenance and brief interpretations.
+
+## Content decisions
+
+Checked against the public Dermapuritys homepage on 13 November 2026. The homepage publishes 29,000+ clients, which conflicts with the brief's 2 Lakhs+ patients; the page uses the published count. Doctor profiles use Dermapuritys' own names, roles and portraits. The FAQ topic is skin treatments, adapting the inconsistent bridal wording. Offers screenshots were treated as inspiration, not an explicit offers-section requirement.
 
 ## Validation
 
-Next.js production build passed. Browser checks covered treatment filtering/search, booking preselection, invalid and valid preview form submissions, mobile menu keyboard behavior, and desktop/tablet/mobile layout.
-
-Original assets and service content: https://dermapuritys.com/category/skin
+Next.js production build passed. Browser checks covered desktop, tablet and mobile widths; hero form placement; service preselection; invalid and valid preview submissions; filters/search/empty state; FAQ expansion; mobile keyboard focus/menu dismissal; and loaded doctor portraits. Final review marked the mobile heading spacing correction resolved.
