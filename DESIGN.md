@@ -248,3 +248,7 @@ On tablet only, fade the lower17% of the portrait into the shared beige backgrou
 ### Four-field contact form
 
 The latest marketing revision supersedes earlier category/service-selector requirements. Render exactly four contact inputs in this order: Name, Email, Phone, Branch. Desktop uses a2x2 field grid; mobile uses a single column. Email uses native email validation. Retain the existing consent line and gold submit button; remove category badge and all Category/Treatment controls. Booking CTAs focus the Name input without maintaining obsolete treatment-selection state.
+
+### Hero CTA hierarchy
+
+The hero copy contains only the Explore treatments text link. Its redundant inline Book Now button is removed; the visible form’s submit button is the primary hero action. Retain the fixed mobile Book Now shortcut and catalogue/bottom booking actions.
